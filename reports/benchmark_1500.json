@@ -1,0 +1,44 @@
+{
+  "size": 1500,
+  "repeats": 5,
+  "results": [
+    {
+      "workload": "List vs set membership",
+      "outputs_equivalent": true,
+      "baseline": {
+        "median_seconds": 0.003638500002125511,
+        "min_seconds": 0.0036073000010219403,
+        "max_seconds": 0.003966999996919185,
+        "median_peak_bytes": 4160.0
+      },
+      "optimized": {
+        "median_seconds": 3.4500000765547156e-05,
+        "min_seconds": 3.369999831193127e-05,
+        "max_seconds": 4.260000059730373e-05,
+        "median_peak_bytes": 41176.0
+      },
+      "speedup": 105.46376583733405,
+      "runtime_reduction_percent": 99.051807042864,
+      "peak_memory_reduction_percent": -889.8076923076923
+    },
+    {
+      "workload": "Nested-loop vs set duplicate check",
+      "outputs_equivalent": true,
+      "baseline": {
+        "median_seconds": 0.025192000000970438,
+        "min_seconds": 0.024698599998373538,
+        "max_seconds": 0.026041499997518258,
+        "median_peak_bytes": 0.0
+      },
+      "optimized": {
+        "median_seconds": 4.13999987358693e-05,
+        "min_seconds": 4.1299997974419966e-05,
+        "max_seconds": 6.760000178474002e-05,
+        "median_peak_bytes": 164056.0
+      },
+      "speedup": 608.5024340627306,
+      "runtime_reduction_percent": 99.83566211998145,
+      "peak_memory_reduction_percent": null
+    }
+  ]
+}

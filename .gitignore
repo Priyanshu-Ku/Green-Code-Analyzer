@@ -1,0 +1,1 @@
+.venv/\n__pycache__/\n*.py[cod]\n.streamlit/\nreports/*.json\n.DS_Store\n
